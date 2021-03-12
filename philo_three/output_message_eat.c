@@ -6,7 +6,7 @@
 /*   By: ehafidi <ehafidi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/14 19:41:56 by ehafidi           #+#    #+#             */
-/*   Updated: 2021/03/12 18:56:25 by ehafidi          ###   ########.fr       */
+/*   Updated: 2021/03/12 19:01:31 by ehafidi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,7 +67,7 @@ int		set_message_eat(int phil, t_params *p, char *buff)
 
 int		output_eat(t_params *p, int phil)
 {
-	char *buff = malloc(sizeof(buff)* 150);
+	char buff[150];
 
 	sem_wait(p->semoutput);
 	memset(buff, 0, 150);
