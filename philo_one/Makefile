@@ -6,7 +6,7 @@
 #    By: ehafidi <ehafidi@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/02/11 19:55:13 by ehafidi           #+#    #+#              #
-#    Updated: 2021/03/14 12:58:50 by ehafidi          ###   ########.fr        #
+#    Updated: 2021/03/14 13:42:05 by ehafidi          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,7 @@ SRC = utils2.c philo_one.c timer.c output_message2.c output_message_eat.c parse_
 OBJ = $(SRC:.c=.o)
 
 CC = gcc 
-CCFLAGS = -Wall -Wextra -Werror -g -fsanitize=address -pthread 
+CCFLAGS = -Wall -Wextra -Werror -g -pthread 
 
 NAME = philo_one
 RM = rm -rf
