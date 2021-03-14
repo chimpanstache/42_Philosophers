@@ -6,7 +6,7 @@
 /*   By: ehafidi <ehafidi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/10 18:13:43 by ehafidi           #+#    #+#             */
-/*   Updated: 2021/03/01 17:58:13 by ehafidi          ###   ########.fr       */
+/*   Updated: 2021/03/14 12:29:57 by ehafidi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,13 +33,9 @@ int		get_fork(t_params *p, int phil)
 	}
 	else
 		pthread_mutex_lock(&p->mutexphilo[0]);
-	if (output(p, 1, phil) == 1)
-		return (1);
-	if (output(p, 1, phil) == 1)
+	if (output_eat(p, phil) == 1)
 		return (1);
 	p->last_meal_time[phil] = get_time();
-	if (output(p, 2, phil) == 1)
-		return (1);
 	ft_usleep(get_time(), p->tteat);
 	pthread_mutex_unlock(&p->mutexphilo[phil]);
 	if (phil != p->nop - 1)

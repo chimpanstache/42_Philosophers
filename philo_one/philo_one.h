@@ -6,7 +6,7 @@
 /*   By: ehafidi <ehafidi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/10 18:14:19 by ehafidi           #+#    #+#             */
-/*   Updated: 2021/03/12 14:19:45 by ehafidi          ###   ########.fr       */
+/*   Updated: 2021/03/14 12:24:09 by ehafidi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,5 +65,6 @@ int					check_input(t_params *p, char **argv, int argc);
 size_t				ft_strlen(const char *str);
 int					ft_itoa_custom(int n, char *arr);
 void				*ft_memcpy(void *dest, const void *src, size_t n);
+int					output_eat(t_params *p, int phil);
 
 #endif

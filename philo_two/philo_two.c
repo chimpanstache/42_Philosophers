@@ -6,7 +6,7 @@
 /*   By: ehafidi <ehafidi@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/10 18:13:43 by ehafidi           #+#    #+#             */
-/*   Updated: 2021/03/01 11:34:18 by ehafidi          ###   ########.fr       */
+/*   Updated: 2021/03/14 13:07:49 by ehafidi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,13 +27,9 @@ int		get_fork(t_params *p, int phil)
 {
 	sem_wait(p->semfork);
 	sem_wait(p->semfork);
-	if (output(p, 1, phil) == 1)
-		return (1);
-	if (output(p, 1, phil) == 1)
+	if (output_eat(p, phil) == 1)
 		return (1);
 	p->last_meal_time[phil] = get_time();
-	if (output(p, 2, phil) == 1)
-		return (1);
 	ft_usleep(get_time(), p->tteat);
 	sem_post(p->semfork);
 	sem_post(p->semfork);
