@@ -1,10 +1,10 @@
 # 42_Philosophers
 This project is an implementation of [the dining philosophers problem](https://en.wikipedia.org/wiki/Dining_philosophers_problem).
 It enables us to work with concurring thread and processes.<br/>
-There is 3 declinations of the solution.<br/>
+There is 3 declinations of the solution.  
 Philo_one : 
 * Each Philosopher is represented with a thread
-* Memory access and syscalls are protected with mutexes<br/>
+* Memory access and syscalls are protected with mutexes. 
 Philo_two : 
 * Each Philosopher is represented by a thread
 * Memory access and syscalls are protected with semaphores<br/>
