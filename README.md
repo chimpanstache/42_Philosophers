@@ -20,7 +20,7 @@ More details are available in the subject here attached
 This project is built on macOS, so you have to run it on a mac environment.
 On your terminal, execute in the repository of your choice:
 ```
-git clone https://github.com/ehafidi/ft_printf.git
+git clone https://github.com/ehafidi/42_Philosophers
 cd philo_one
 make 
 ./philo_one [number of philosophers (<= 200 ms)] [lifetime (ms)] [time to eat (ms)] [time to sleep (ms)]
